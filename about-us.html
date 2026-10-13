@@ -1,51 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,700;0,800;1,700&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylepage.css">
 </head>
 <body>
-    <nav>
-        <a href="about-us.html">About Us</a>
-        <a href="tech-heroes.html">Tech Heroes</a>
-        <a href="index.html">Welcome Page</a>
-        <a href="resource.html">Resources</a>
-    </nav> <!-- This adds our navigation so users can switch between our site's pages AJ-->
-    <div class="cards"> <!-- This class will group all three of our profile cards together AJ-->
-        <section> <!-- This creates Brooke's profile card AJ-->
-            <h1>Brooke German</h1>
-            <div class="image-box"> <!-- This will be adding a black boarder around image to make it standout more and look professional BG-->
-                <img src="brooke.jpg" alt="Picture of Brooke"> <!-- Then this will add in the image within the black boarder BG-->
-            </div>
-            <p> <!-- This adds a short bio about Brooke, her interests, and her favorite tech thing AJ-->
-                My name is Brooke. I am a senior majoring in Information Science. A few things I am interested in are crocheting, quilting, and hiking.
-                I am most involved with crocheting as I have started my own small business with it and have been a vendor at craft fairs for the past
-                three years. My favorite tech thing would be my Apple Watch as I find it very helpful for tracking sleep patterns and knowing when I get
-                notifications.
-            </p>
-        </section>
-        <section>
-            <h1>Avani Joshi</h1> <!-- This creates my profile card AJ-->
-            <div class="image-box"> <!-- This adds a border around my image AJ-->
-                <img src="avani.jpg" alt="Picture of Avani"> <!-- This adds in my image within the border AJ-->
-            </div>
-            <p> <!-- This adds a short bio about me, my interests, and my favorite tech thing AJ-->
-                Hi! I'm Avani. I am a sophomore majoring in Computer Science and pursuing a certificate in Data Science. In my free time, I enjoy
-                spending time outdoors and playing the piano. My favorite tech thing is my noise-cancelling headphones; I wouldn't be nearly as productive
-                without them.
-            </p>
-        </section>
-        <section>
-            <h1>Ben Johnson</h1> <!-- This creates Ben's profile card AJ-->
-            <div class="image-box"> <!-- this adds a black border around image BJ-->
-                <img src="ben.jpeg" alt="Picture of Ben"> <!-- this adds in the image within the black boarder BJ-->
-            </div>
-            <p> <!-- This adds a short bio about Ben, his interests, and his favorite tech thing AJ-->
-                Hello there, my name is Ben! I am a senior majoring in Information Science and Psychology with certificates in Consulting and Digital
-                Studies. Some of my interests include working out, fishing, and trying new recipes. My favorite tech thing would be my Apple AirTag
-                I have placed in my wallet. It's reassuring to know that if I ever misplace it I have a way to find it.
-            </p>
-        </section>
-    </div>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="resource.html">Resources</a>
+            <a href="tech-heroes.html">Tech Heroes</a>
+            <a href="about-us.html" class="current" aria-current="page">About Us</a>
+        </nav> <!-- This adds our navigation so users can switch between our site's pages AJ-->
+    </header>
+    <main id="main">
+        <h1>About Us</h1>
+        <p>Swipe or scroll sideways to meet each of us, or click on one of the buttons to directly jump to a profile:</p>
+        <div class="carousel-dots">
+            <a href="#brooke">Brooke German</a>
+            <a href="#avani">Avani Joshi</a>
+            <a href="#ben">Ben Johnson</a>
+        </div>
+        <div class="cards hero-carousel" role="region" aria-label="About us carousel" tabindex="0"> <!-- This class will group all three of our profile cards together AJ-->
+            <section class="hero" id="brooke" aria-labelledby="brooke-name"> <!-- This creates Brooke's profile card AJ-->
+                <h2 class="name" id="brooke-name">Brooke German</h2>
+                <div class="hero-body">
+                    <div class="photo image-box"> <!-- This will be adding a black boarder around image to make it standout more and look professional BG-->
+                        <img src="brooke.jpg" alt="Photo of Brooke German"> <!-- Then this will add in the image within the black boarder BG-->
+                    </div>
+                    <div class="bio">
+                        <p> <!-- This adds a short bio about Brooke, her interests, and her favorite tech thing AJ-->
+                            My name is Brooke. I am a senior majoring in Information Science. A few things I am interested in are crocheting, quilting, and hiking. I am most involved with crocheting as I have started my own small business with it and have been a vendor at craft fairs for the past three years. My favorite tech thing would be my Apple Watch as I find it very helpful for tracking sleep patterns and knowing when I get notifications.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="hero" id="avani" aria-labelledby="avani-name">
+                <h2 class="name" id="avani-name">Avani Joshi</h2> <!-- This creates my profile card AJ-->
+                <div class="hero-body">
+                    <div class="photo image-box"> <!-- This adds a border around my image AJ-->
+                        <img src="avani.jpg" alt="Photo of Avani Joshi"> <!-- This adds in my image within the border AJ-->
+                    </div>
+                    <div class="bio">
+                        <p> <!-- This adds a short bio about me, my interests, and my favorite tech thing AJ-->
+                            Hi! I'm Avani. I am a sophomore majoring in Computer Science and pursuing a certificate in Data Science. In my free time, I enjoy spending time outdoors and playing the piano. My favorite tech thing is my noise-cancelling headphones; I wouldn't be nearly as productive without them.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="hero" id="ben" aria-labelledby="ben-name">
+                <h2 class="name" id="ben-name">Ben Johnson</h2> <!-- This creates Ben's profile card AJ-->
+                <div class="hero-body">
+                    <div class="photo image-box"> <!-- this adds a black border around image BJ-->
+                        <img src="ben.jpeg" alt="Photo of Ben Johnson"> <!-- this adds in the image within the black boarder BJ-->
+                    </div>
+                    <div class="bio">
+                        <p> <!-- This adds a short bio about Ben, his interests, and his favorite tech thing AJ-->
+                            Hello there, my name is Ben! I am a senior majoring in Information Science and Psychology with certificates in Consulting and Digital Studies. Some of my interests include working out, fishing, and trying new recipes. My favorite tech thing would be my Apple AirTag I have placed in my wallet. It's reassuring to know that if I ever misplace it I have a way to find it.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>LIS 500: Code &amp; Power | Fall 2026</p>
+        <p>Created by Brooke German, Avani Joshi, and Ben Johnson</p>
+        <p><a href="https://github.com/ajoshi231/lis500-code-and-power-fa26">Take a gander at our GitHub repository!</a></p>
+    </footer>
 </body>
 </html>
