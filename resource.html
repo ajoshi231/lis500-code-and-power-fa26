@@ -1,50 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A First Timer's Primer to Implicit Bias, the IAT Test, and Intersectionality</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,700;0,800;1,700&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylepage.css">
 </head>
 <body class="resource"> <!-- This gives the resource page its own class so the text can be aligned to the LH side AJ-->
-    <nav>
-        <a href="about-us.html">About Us</a>
-        <a href="tech-heroes.html">Tech Heroes</a>
-        <a href="index.html">Welcome Page</a>
-        <a href="resource.html">Resources</a>
-    </nav>
-    <h1>A First Timer's Primer to Implicit Bias, the IAT Test, and Intersectionality</h1> <!-- This adds the centered title for our guide AJ-->
-    <h2>About This Guide</h2>
-        <p>This guide is about learning how implicit biases can influence a person's decision-making and associations. It includes tools such as the Harvard Implicit Association Test (IAT) and intersectionality questions to help people recognize and reflect on their own biases. <!-- This is an overview of what the guide is about BJ --></p>
-    <h2>Implicit Bias</h2>
-        <p>What is implicit bias? Implicit bias is an unconscious or automatic association toward a person or group that can influence how we think, make decisions, or behave without us realizing it.<!-- This is the definition of implicit bias BJ --></p>
-    <h2>Implicit Association Test</h2>
-        <p> </p>
-        <p><a href="https://implicit.harvard.edu/implicit/takeatest.html">Harvard IAT Test</a></p> <!-- This references a link to the Harvard Implicit Association Test AJ-->
-    <h2>Other Activities</h2>
-    <h3>Activity #1</h3>
-        <p> </p>
-        <p><a href="https://ggie.berkeley.edu/practice/who-am-i/">Greater Good in Education: Who Am I?</a></p> <!-- This is a link to the Greater Good in Education Who am I test BJ -->
-    <h3>Activity #2</h3>
-        <p> </p>
-        <p><a href="https://sites.lsa.umich.edu/inclusive-teaching/wp-content/uploads/sites/732/2020/07/Social-Identity-WheelDefinitions.pdf">Social Identity Wheel</a></p> <!-- This is a link to the Social Identity Wheel Definition PDF BJ -->
-    <h2>Intersectionality</h2>
-        <p>What is intersectionality? Intersectionality is the idea that a person's different identities, like gender, race, or class, can overlap and shape their experiences. This overlap of identities can also determine how an individual experiences discrimination or privilege.<!-- This is a definition of intersectionality BJ --></p>
-    <h2>Questions to Consider</h2>
-    <ul> <!-- Using an unordered list here to list questions to think about BG -->
-        <li>How can implicit bias affect how we interact with others for the first time?</li>
-        <li>Why might it be important to recognize what our own biases are?</li>
-        <li>How can first impressions be affected by implicit bias?</li>
-        <li>Could learning about people's different experiences challenge our own biases and make us think differently?</li>
-    </ul>
-    <h2>Our Experience</h2>
-        <p>
-            After taking the IAT test, we collectively agree that everyone is born with these biases, but we do think that they can be overridden. Based on the test, it seemed to have some bias within taking it. For example, with associating a white person with good traits using the left key and a black person with bad traits using the right key. The user will get their mind used to which side has which option, so when part of the roles are switched up, it becomes more of a cognitive test than a bias test. With this in mind, we discussed how everyone seems to have boxes in their minds and everyone is supposed to be placed in their respective box. One thing we wanted to try to do to combat this way of thinking is seeing if we were able to get to know the person and still keep them outside of any so called box since many different people can fit into many different boxes. This would all be based on their background and their experiences; not every white person will act the same way, likewise, not every person of color will act the same way. As discussed, most of this thinking seems to come from our parents as their thoughts are put onto us at a very young age, but it will be our job to step outside of these preformed biases and try to see each indiviual person as their own self.
-        </p>
-    <h2>Selected Resources</h2>
-    <ul>
-        <li><a href="https://www.youtube.com/watch?v=akOe5-UsQ2o&t=1s">The urgency of intersectionality: Kimberlé Crenshaw </a></li> <!-- Link to Kimberlé Crenshaw Ted talk on intersectionality BJ -->
-        <li><a href="https://uas.alaska.edu/provost/docs/adjunct_faculty/adjunct_orientation/2016_spring/WhiteFragility%20-E.Hayes.pdf">White Fragility: Why It’s So Hard to Talk to White People About Racism</a></li> <!-- Link to Dr. Robin DiAngelo article on White Fragility BJ -->
-    </ul>
-    <h2>Further Exploration</h2> <!-- This is a closing reflection/explanation on why learning about implicit bias matters AJ-->
-    <p>Everyone is continuously learning about implicit bias and how it affects them in their daily life. Being able to reflect on your implicit biases and be made known of them can be helpful. People who are aware of their implicit biases can try to reflect on why they may have those biases and try a new way of thinking so that everyone is not put into a box.</p>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="resource.html" class="current" aria-current="page">Resources</a>
+            <a href="tech-heroes.html">Tech Heroes</a>
+            <a href="about-us.html">About Us</a>
+        </nav>
+    </header>
+    <main id="main">
+        <section class="splash" aria-labelledby="guide-title">
+            <h1 id="guide-title">A First Timer's Primer to Implicit Bias, the IAT Test, and Intersectionality</h1> <!-- This adds the centered title for our guide AJ-->
+            <h2>About This Guide</h2>
+            <p class="intro">This guide is about learning how implicit biases can influence a person's decision-making and associations. It includes tools such as the Harvard Implicit Association Test (<abbr title="Implicit Association Test">IAT</abbr>) and intersectionality questions to help people recognize and reflect on their own biases. <!-- This is an overview of what the guide is about BJ --></p>
+        </section>
+        <section aria-labelledby="bias-title">
+            <h2 id="bias-title">Implicit Bias</h2>
+            <p>What is implicit bias? Implicit bias is an unconscious or automatic association toward a person or group that can influence how we think, make decisions, or behave without us realizing it.<!-- This is the definition of implicit bias BJ --></p>
+        </section>
+        <section aria-labelledby="iat-title">
+            <h2 id="iat-title">Implicit Association Test</h2>
+            <p class="next-step"><a href="https://implicit.harvard.edu/implicit/takeatest.html">Harvard IAT Test <span aria-hidden="true">&rarr;</span></a></p> <!-- This references a link to the Harvard Implicit Association Test AJ-->
+        </section>
+        <hr>
+        <section aria-labelledby="activities-title">
+            <h2 id="activities-title">Other Activities</h2>
+            <div class="milestone-list">
+                <article class="milestone-box">
+                    <h3>Activity #1</h3>
+                    <a href="https://ggie.berkeley.edu/practice/who-am-i/">Greater Good in Education: Who Am I? <span aria-hidden="true">&rarr;</span></a> <!-- This is a link to the Greater Good in Education Who am I test BJ -->
+                </article>
+                <article class="milestone-box">
+                    <h3>Activity #2</h3>
+                    <a href="https://sites.lsa.umich.edu/inclusive-teaching/wp-content/uploads/sites/732/2020/07/Social-Identity-WheelDefinitions.pdf">Social Identity Wheel <span aria-hidden="true">&rarr;</span></a> <!-- This is a link to the Social Identity Wheel Definition PDF BJ -->
+                </article>
+            </div>
+        </section>
+        <hr>
+        <section aria-labelledby="intersectionality-title">
+            <h2 id="intersectionality-title">Intersectionality</h2>
+            <p>What is intersectionality? Intersectionality is the idea that a person's different identities, like gender, race, or class, can overlap and shape their experiences. This overlap of identities can also determine how an individual experiences discrimination or privilege.<!-- This is a definition of intersectionality BJ --></p>
+        </section>
+        <section aria-labelledby="questions-title">
+            <h2 id="questions-title">Questions to Consider</h2>
+            <ul> <!-- Using an unordered list here to list questions to think about BG -->
+                <li>How can implicit bias affect how we interact with others for the first time?</li>
+                <li>Why might it be important to recognize what our own biases are?</li>
+                <li>How can first impressions be affected by implicit bias?</li>
+                <li>Could learning about people's different experiences challenge our own biases and make us think differently?</li>
+            </ul>
+        </section>
+        <section aria-labelledby="experience-title">
+            <h2 id="experience-title">Our Experience</h2>
+            <p>
+                After taking the IAT test, we collectively agree that everyone is born with these biases, but we do think that they can be overridden. Based on the test, it seemed to have some bias within taking it. For example, with associating a white person with good traits using the left key and a black person with bad traits using the right key. The user will get their mind used to which side has which option, so when part of the roles are switched up, it becomes more of a cognitive test than a bias test. With this in mind, we discussed how everyone seems to have boxes in their minds and everyone is supposed to be placed in their respective box. One thing we wanted to try to do to combat this way of thinking is seeing if we were able to get to know the person and still keep them outside of any so called box since many different people can fit into many different boxes. This would all be based on their background and their experiences; not every white person will act the same way, likewise, not every person of color will act the same way. As discussed, most of this thinking seems to come from our parents as their thoughts are put onto us at a very young age, but it will be our job to step outside of these pre-made biases and try to see each individual person as their own self.
+            </p>
+        </section>
+        <hr>
+        <section aria-labelledby="resources-title">
+            <h2 id="resources-title">Selected Resources</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=akOe5-UsQ2o&amp;t=1s">The urgency of intersectionality: Kimberlé Crenshaw </a></li> <!-- Link to Kimberlé Crenshaw Ted talk on intersectionality BJ -->
+                <li><a href="https://uas.alaska.edu/provost/docs/adjunct_faculty/adjunct_orientation/2016_spring/WhiteFragility%20-E.Hayes.pdf">White Fragility: Why It’s So Hard to Talk to White People About Racism</a></li> <!-- Link to Dr. Robin DiAngelo article on White Fragility BJ -->
+            </ul>
+        </section>
+        <section aria-labelledby="cited-title">
+            <h2 id="cited-title">Works Cited</h2>
+            <ul>
+                <li>Buolamwini, J. (2023). <em>Unmasking AI: My mission to protect what is human in a world of machines.</em> Random House.</li>
+                <li>Crenshaw, K. (2016). <em>The urgency of intersectionality</em> [Video]. TED.</li>
+                <li>DiAngelo, R. (2011). White fragility. <em>International Journal of Critical Pedagogy, 3</em>(3), 54–70.</li>
+                <li>Nakamura, L. (2014). Indigenous circuits: Navajo women and the racialization of early electronic manufacture. <em>American Quarterly, 66</em>(4), 919–941.</li>
+            </ul>
+        </section>
+        <section aria-labelledby="further-title">
+            <h2 id="further-title">Further Exploration</h2> <!-- This is a closing reflection/explanation on why learning about implicit bias matters AJ-->
+            <p>Everyone is continuously learning about implicit bias and how it affects them in their daily life. Being able to reflect on your implicit biases and be made known of them can be helpful. People who are aware of their implicit biases can try to reflect on why they may have those biases and try a new way of thinking so that everyone is not put into a box.</p>
+        </section>
+    </main>
+    <footer>
+        <p>LIS 500: Code &amp; Power | Fall 2026</p>
+        <p>Created by Brooke German, Avani Joshi, and Ben Johnson</p>
+        <p><a href="https://github.com/ajoshi231/lis500-code-and-power-fa26">Take a gander at our GitHub repository!</a></p>
+    </footer>
 </body>
 </html>
