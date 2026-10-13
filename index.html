@@ -1,9 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta http-equiv="refresh" content="0; url=splash.html">
-    <title>Welcome</title> <!-- This redirects our website's users to the welcome page when they open the site AJ-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Code &amp; Power</title>
+    <meta name="description" content="A guide to intersectionality, implicit bias, the IAT, some tech heroes of today, and more!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fraunces:wght@600;800&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylepage.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header>
+        <nav aria-label="Main navigation">
+            <a href="index.html" class="current" aria-current="page">Home</a>
+            <a href="resource.html">Resources</a>
+            <a href="tech-heroes.html">Tech Heroes</a>
+            <a href="about-us.html">About Us</a>
+        </nav>
+    </header>
+    <main id="main">
+        <section class="splash" aria-labelledby="welcome-title">
+            <div class="content">
+                <p class="label"><span aria-hidden="true">// </span>Code &amp; Power</p>
+                <h1 id="welcome-title">Welcome!</h1>
+                <p class="intro">
+                    Hi, we're <span>Brooke, Avani, and Ben</span>. Many a time, we reach for our technology without pausing to wonder who it was built for, and this site is where we explore that question. We invite you to begin with the basics of implicit bias and intersectionality, read up on our collective IAT testing experience as well as meet three stalwarts who are reshaping the tech industry as we speak. Let's explore!
+                </p>
+                <div class="buttons">
+                    <a class="btn" href="resource.html">Start at Milestone 1</a>
+                    <a class="btn btn-outline" href="about-us.html">Or meet us first?!</a>
+                </div>
+            </div>
+        </section>
+        <section aria-labelledby="explore-title">
+            <p class="label"><span aria-hidden="true">// </span>The Roadmap</p>
+            <h2 id="explore-title">Three Milestones</h2>
+            <div class="grid-3">
+                <article class="card">
+                    <h3>Milestone 1: Understand the Lay of the Land</h3>
+                    <p>The ideas behind implicit bias and intersectionality, IAT test-taking experience and a few activities we recommend you try out.</p>
+                    <a href="resource.html">Unlock Milestone 1 <span aria-hidden="true">&rarr;</span></a>
+                </article>
+                <article class="card">
+                    <h3>Milestone 2: Meet and Greet the Heroes</h3>
+                    <p>Three people who are working to change the tech industry for the better</p>
+                    <a href="tech-heroes.html">Unlock Milestone 2 <span aria-hidden="true">&rarr;</span></a>
+                </article>
+                <article class="card">
+                    <h3>Milestone 3: Meet Us</h3>
+                    <p>What we study and what we do for leisure, along with our favorite tech things.</p>
+                    <a href="about-us.html">Unlock Milestone 3 <span aria-hidden="true">&rarr;</span></a>
+                </article>
+            </div>
+        </section>
+        <section aria-labelledby="watch-title">
+            <p class="label"><span aria-hidden="true">// </span>Press Play</p>
+            <h2 id="watch-title">The Talk That Started It All</h2>
+            <p>
+                Kimberl&eacute; Crenshaw coined the term <span>intersectionality</span>. In this talk, she explains why looking at race and gender together is key to progressing towards equity; her ideas served as the foundation to our resources page.
+            </p>
+            <div class="video-wrap">
+                <iframe src="https://www.youtube.com/embed/akOe5-UsQ2o" title="Video: Kimberl&eacute; Crenshaw, The Urgency of Intersectionality (TED Talk)" loading="lazy" allowfullscreen></iframe>
+            </div>
+            <p>
+                Rather read? See:
+                <a href="https://www.ted.com/talks/kimberle_crenshaw_the_urgency_of_intersectionality/transcript">TED transcript page for The Urgency of Intersectionality</a>.
+            </p>
+        </section>
+        <section aria-labelledby="why-title">
+            <p class="label"><span aria-hidden="true">// </span>The Bigger Picture</p>
+            <h2 id="why-title">Why Does This Matter? Maybe you can't see me.</h2>
+            <p>
+                In <em>Unmasking AI</em>, Joy Buolamwini exemplifies how technology that looks objective can repeat existing inequalities. Keep one question in your back pocket as you explore:
+            </p>
+            <blockquote>
+                Who really benefits from the technologies we create?
+            </blockquote>
+            <p class="next-step">
+                Ready? <a href="resource.html">On to Milestone 1. Tally ho!<span aria-hidden="true">&rarr;</span></a>
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>LIS 500 | Code &amp; Power | Fall 2026</p>
+        <p>Created by Brooke German, Avani Joshi, and Ben Johnson</p>
+        <p><a href="https://github.com/ajoshi231/lis500-code-and-power-fa26">Take a gander at our GitHub repository!</a></p>
+    </footer>
 </body>
 </html>
