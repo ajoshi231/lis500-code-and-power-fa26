@@ -522,3 +522,6 @@ footer a:focus {
     width: 60%;
   }
 }
+.image-box img {
+  border: 5px solid black;
+}
