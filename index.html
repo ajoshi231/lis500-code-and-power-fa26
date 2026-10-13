@@ -7,7 +7,7 @@
     <meta name="description" content="A guide to intersectionality, implicit bias, the IAT, some tech heroes of today, and more!">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fraunces:wght@600;800&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,700;0,800;1,700&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylepage.css">
 </head>
 <body>
@@ -22,60 +22,73 @@
     </header>
     <main id="main">
         <section class="splash" aria-labelledby="welcome-title">
-            <div class="content">
-                <h1 id="welcome-title">Welcome!</h1>
-                <p class="intro">
-                    Hi! We're <span>Brooke, Avani, and Ben</span>. We invite you to begin with the basics of implicit bias and intersectionality, read up on our collective IAT/IBT experience as well as meet three stalwarts who are reshaping the tech industry as we speak. Let's explore!
-                </p>
-                <div class="buttons">
-                    <a class="btn" href="resource.html">Start at Milestone 1</a>
-                    <a class="btn btn-outline" href="about-us.html">Or meet us first?!</a>
-                </div>
-            </div>
+            <h1 id="welcome-title">Welcome!</h1>
+            <p class="intro">
+                Hello! We're <span class="highlighted-name">Brooke</span>, <span class="highlighted-name">Avani</span>, and <span class="highlighted-name">Ben</span>. This site is where we invite you to begin with the basics of implicit bias and intersectionality, read up on our collective <abbr title="Implicit Association Test">IAT</abbr>/<abbr title="Implicit Bias Test">IBT</abbr> experience as well as meet three stalwarts who are reshaping the tech industry as we speak. Let's explore!
+            </p>
         </section>
         <section aria-labelledby="explore-title">
             <h2 id="explore-title">Three Milestones</h2>
-            <div class="grid-3">
-                <article class="card">
+            <div class="milestone-list">
+                <article class="milestone-box">
                     <h3>Milestone 1: Understand the Lay of the Land</h3>
-                    <p>The ideas behind implicit bias and intersectionality, IAT test-taking experience and a few activities we recommend you try out</p>
+                    <p>The ideas behind implicit bias and intersectionality, <abbr title="Implicit Association Test">IAT</abbr> test-taking experience and a few activities we recommend you try out.</p>
                     <a href="resource.html">Unlock Milestone 1 <span aria-hidden="true">&rarr;</span></a>
                 </article>
-                <article class="card">
+                <article class="milestone-box">
                     <h3>Milestone 2: Meet and Greet the Heroes of Today</h3>
-                    <p>Three people who are working to change the tech industry for the better</p>
+                    <p>Three people who are working to change the tech industry for the better.</p>
                     <a href="tech-heroes.html">Unlock Milestone 2 <span aria-hidden="true">&rarr;</span></a>
                 </article>
-                <article class="card">
+                <article class="milestone-box">
                     <h3>Milestone 3: Meet Us</h3>
-                    <p>What we study and what we do for leisure, along with our favorite tech things</p>
+                    <p>What we study and what we do for leisure, along with our favorite tech things.</p>
                     <a href="about-us.html">Unlock Milestone 3 <span aria-hidden="true">&rarr;</span></a>
                 </article>
             </div>
         </section>
-        <section aria-labelledby="watch-title">
-            <h2 id="watch-title">The Talk Heard Round the World</h2>
-            <p>
-                Advocate Kimberl&eacute; Crenshaw coined the term <span>intersectionality</span>, and in this TED talk, she explains why looking at aspects of the human identity such as race and gender together is key to progressing towards equity. Her ideas serve as the backbone to our resources page and our interpretation of intersectionality.
-            </p>
-            <div class="video-wrap">
-                <iframe src="https://www.youtube.com/embed/akOe5-UsQ2o" title="Video: Kimberl&eacute; Crenshaw, The Urgency of Intersectionality (TED Talk)" loading="lazy" allowfullscreen></iframe>
+        <hr>
+        <section aria-labelledby="pin-title">
+            <h2 id="pin-title">Pin Your Ideas</h2>
+            <p>What do you already think about bias and technology? Type your thoughts on the notes below. Nothing is saved or sent anywhere, so write whatever you like!</p>
+            <div class="pin-board">
+                <div class="sticky-note">
+                    <label for="idea-one">Idea #1</label>
+                    <textarea id="idea-one" name="idea-one"></textarea>
+                </div>
+                <div class="sticky-note">
+                    <label for="idea-two">Idea #2</label>
+                    <textarea id="idea-two" name="idea-two"></textarea>
+                </div>
+                <div class="sticky-note">
+                    <label for="idea-three">Idea #3</label>
+                    <textarea id="idea-three" name="idea-three"></textarea>
+                </div>
+                <div class="sticky-note">
+                    <label for="idea-four">Idea #4</label>
+                    <textarea id="idea-four" name="idea-four"></textarea>
+                </div>
             </div>
-            <p>
-                Rather read? See:
-                <a href="https://www.ted.com/talks/kimberle_crenshaw_the_urgency_of_intersectionality/transcript">TED transcript page for The Urgency of Intersectionality</a>.
-            </p>
         </section>
+        <hr>
         <section aria-labelledby="why-title">
             <h2 id="why-title">Why Does This Matter? Maybe you can't see me.</h2>
             <p>
-                In <em>Unmasking AI</em>, Joy Buolamwini's life's work exemplifies how technology that looks objective and mechanical on paper can propagate inequalities and biases. We recommend you keep this consideration on the top of your mind as you explore:
+                In <em>Unmasking AI</em>, <span class="highlighted-name">Joy Buolamwini</span>'s work exemplifies how technology that appears to be all-knowing and objectives on paper can instead propagate inequalities and biases. Buolamwini turned her research into a spoken word poem, <em>AI, Ain't I A Woman?</em>, which depicts facial recognition algorithms misreading the countenances of famous Black women like Serena Williams.
             </p>
+            <div class="video-box">
+                <iframe src="https://www.youtube.com/embed/QxuyfWoVV98" title="Video: Joy Buolamwini, AI, Ain't I A Woman? (spoken word poem)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p>
+                Want more backstory? Dig in:
+                <a href="https://www.blackhistory.mit.edu/archive/joy-buolamwini-ai-aint-i-woman-2018">MIT Black History Project page for AI, Ain't I A Woman?</a>
+            </p>
+            <p>We recommend you keep this consideration handy as you explore:</p>
             <blockquote>
                 Who benefits from the technologies of today? Who doesn't?
             </blockquote>
             <p class="next-step">
-                Ready? <a href="resource.html">On to Milestone 1. Tally ho!<span aria-hidden="true">&rarr;</span></a>
+                Ready? <a href="resource.html">On to Milestone 1. Tally ho! <span aria-hidden="true">&rarr;</span></a>
             </p>
         </section>
     </main>
