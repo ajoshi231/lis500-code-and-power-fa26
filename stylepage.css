@@ -422,7 +422,7 @@ footer a:focus {
   padding: 6px 16px;
   background-color: var(--white);
   border: 3px solid var(--main-blue);
-  border-radius: 20px;
+  border-radius: 0;
   text-decoration: none;
 }
 .carousel-dots a:hover {
