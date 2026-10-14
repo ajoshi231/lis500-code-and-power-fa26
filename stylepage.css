@@ -478,6 +478,13 @@ footer a:focus {
 .bio p {
   margin-top: 0;
 }
+.bio .intersection {
+  margin: 15px 0 0 0;
+  padding: 10px 15px;
+  font-size: 0.95em;
+  background-color: var(--sticky-yellow);
+  border-left: 6px solid var(--main-blue);
+}
 .links {
   margin: 0 20px;
   padding-bottom: 15px;
@@ -500,6 +507,9 @@ footer a:focus {
 .hero:nth-of-type(2) .name {
   background-color: var(--leaf-green);
 }
+.hero:nth-of-type(2) .intersection {
+  border-left-color: var(--leaf-green);
+}
 .hero:nth-of-type(3) {
   border-color: var(--sunny-orange);
   box-shadow: 8px 8px 0 #B36B00;
@@ -507,6 +517,9 @@ footer a:focus {
 .hero:nth-of-type(3) .name {
   background-color: var(--sunny-orange);
   color: var(--text-color);
+}
+.hero:nth-of-type(3) .intersection {
+  border-left-color: var(--sunny-orange);
 }
 @media (prefers-reduced-motion: no-preference) {
   .hero-carousel {
