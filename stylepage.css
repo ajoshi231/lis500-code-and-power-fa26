@@ -421,7 +421,7 @@ footer a:focus {
     page-break-inside: avoid;
   }
 }
-/* This creates the name buttons and carousel for our personal profile cards */
+/* This creates the name buttons and carousel for profile cards */
 .carousel-dots {
   margin: 10px 0 20px 0;
   text-align: center;
