@@ -628,3 +628,11 @@ h2[id] {
 #top-guess {
   margin: 0 0 10px 0;
 }
+.ticker.paused p {
+  animation-play-state: paused;
+}
+.ticker-button {
+  margin: 10px 0 0 0;
+  padding: 6px 16px;
+  font-size: 1em;
+}
