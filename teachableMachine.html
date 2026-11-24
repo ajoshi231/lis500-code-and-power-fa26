@@ -32,8 +32,10 @@
     </section>
     <section>
       <h2>Try the Model!</h2>
-      <button type="button" onclick="init()">Start</button> <!-- This adds a button that starts the webcam and loads the model AJ-->
+      <button type="button" onclick="init()">Start Camera</button> <!-- This adds a button that starts the webcam and loads the model AJ-->
+      <button type="button" onclick="stopCamera()">Stop Camera</button>
       <div id="webcam-container"></div>
+      <p id="top-guess"></p>
       <div id="label-container"></div>
     </section>
     <section>
@@ -93,8 +95,12 @@
     // the link to your model provided by Teachable Machine export panel
     const URL = "./model/";
     let model, webcam, labelContainer, maxPredictions;
+    let running = false;
+    let frames = 0;
     // Load the image model and setup the webcam
     async function init() {
+        if (running) return;
+        running = true;
         const modelURL = URL + "model.json";
         const metadataURL = URL + "metadata.json";
         // load the model and metadata
@@ -116,20 +122,37 @@
             labelContainer.appendChild(document.createElement("div"));
         }
     }
+    function stopCamera() {
+        running = false;
+        webcam.stop();
+        document.getElementById("webcam-container").innerHTML = "";
+        document.getElementById("label-container").innerHTML = "";
+        document.getElementById("top-guess").innerHTML = "";
+    }
     async function loop() {
+        if (!running) return;
         webcam.update(); // update the webcam frame
-        await predict();
+        frames++;
+        if (frames % 30 === 0) {
+            await predict();
+        }
         window.requestAnimationFrame(loop);
     }
     // run the webcam image through the image model
-    async function predict() {
+      async function predict() {
         // predict can take in an image, video or canvas html element
         const prediction = await model.predict(webcam.canvas);
+        if (!running) return;
+        let best = prediction[0];
         for (let i = 0; i < maxPredictions; i++) {
             const classPrediction =
                 prediction[i].className + ": " + prediction[i].probability.toFixed(2);
             labelContainer.childNodes[i].innerHTML = classPrediction;
+            if (prediction[i].probability > best.probability) {
+                best = prediction[i];
+            }
         }
+        document.getElementById("top-guess").innerHTML = best.className;
     }
   </script>
 </body>
