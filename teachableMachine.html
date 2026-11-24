@@ -30,8 +30,9 @@
       <a href="#video-title">Video</a>
       <a href="#references-title">References</a>
     </div>
-    <div class="ticker"> <!-- This creates the scrolling banner text, otherwise known as a ticker, that hypes up our user for trying out our model AJ-->
+    <div class="ticker" aria-hidden="true"> <!-- This creates the scrolling banner text, otherwise known as a ticker, that hypes up our user for trying out our model AJ-->
       <p> Let's play rock paper scissors! ✊✋✌️ Let's play rock paper scissors! ✊✋✌️ Let's play rock paper scissors! ✊✋✌️ Let's play rock paper scissors! ✊✋✌️</p>
+    <button type="button" class="ticker-button" onclick="toggleTicker()">Pause or Play Ticker</button>
     </div>
     <section class="splash">
       <h2>A Rock-Paper-Scissors Classifier</h2>
@@ -150,6 +151,9 @@
         document.getElementById("webcam-container").innerHTML = "";
         document.getElementById("label-container").innerHTML = "";
         document.getElementById("top-guess").innerHTML = "";
+    }
+    function toggleTicker() {
+        document.querySelector(".ticker").classList.toggle("paused");
     }
     async function loop() {
         if (!running) return;
