@@ -37,15 +37,26 @@
       <h2>A Rock-Paper-Scissors Classifier</h2>
       <p>Our classifier, trained on Google’s Teachable Machine, recognizes the three main gestures (rock, paper, and scissors) in the classic, old-timey game of rock, paper, scissors.</p>
     </section>
-    <section>
+    <section class="splash">
       <h2 id="try-title">Try the Model!</h2>
-      <button type="button" onclick="init()">Start Camera</button> <!-- This adds a button that starts the webcam and loads the model AJ-->
-      <button type="button" onclick="stopCamera()">Stop Camera</button>
-      <div id="webcam-container"></div> <!-- This will provide a spot where the webcam video/image will be displayed BG -->
-      <p id="top-guess"></p>
-      <div id="label-container"></div> <!-- This will display the model's predictions and confidence scores for each gesture given BG -->
+      <ol>
+        <li>1. Click "Start Camera" and allow camera access on your browser.</li>
+        <li>2. Hold up either one of the listed gestures, rock, paper, or scissors, in front of the camera.</li>
+        <li>3. Take a look at the model's interpretation and the probabilities next to it.</li>
+        <li>4. Click Stop Camera when you are done trying out the model.</li>
+      </ol>
+      <div class="camera-buttons">
+        <button type="button" onclick="init()">Start Camera</button> <!-- This adds a button that starts the webcam and loads the model AJ-->
+        <button type="button" onclick="stopCamera()">Stop Camera</button>
+      </div>
+      <div class="try-area">
+        <div id="webcam-container" role="img" aria-label="Live camera preview"></div> <!-- This will provide a spot where the webcam video/image will be displayed BG -->
+        <div>
+          <p id="top-guess" role="status"></p>
+          <div id="label-container"></div> <!-- This will display the model's predictions and confidence scores for each gesture given BG -->
+        </div>
+      </div>
     </section>
-    <section>
       <h2 id="data-title">Data</h2>
       <ul>
         <li><a href="https://github.com/ajoshi231/lis500-code-and-power-fa26/tree/main/data">Dataset on GitHub</a></li> <!-- This is providing the user access to our datasets we uploaded from training and our GitHub repository BG -->
