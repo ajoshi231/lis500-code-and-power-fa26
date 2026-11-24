@@ -607,3 +607,6 @@ button:focus {
 #label-container {
   font-family: "IBM Plex Mono", monospace;
 }
+h2[id] {
+  scroll-margin-top: 100px;
+}
