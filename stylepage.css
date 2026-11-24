@@ -610,3 +610,21 @@ button:focus {
 h2[id] {
   scroll-margin-top: 100px;
 }
+.splash h2 {
+  margin-top: 0;
+}
+.camera-buttons {
+  margin: 15px 0;
+}
+.try-area {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+}
+#webcam-container:empty {
+  display: none;
+}
+#top-guess {
+  margin: 0 0 10px 0;
+}
