@@ -576,3 +576,34 @@ footer a:focus {
     }
   }
 }
+button {
+  margin: 6px 6px 6px 0;
+  padding: 12px 28px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--white);
+  background-color: var(--main-blue);
+  border: 3px outset #7FB4DB;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--leaf-green);
+}
+button:focus {
+  outline: 3px solid var(--focus-color);
+  background-color: var(--sticky-yellow);
+  color: var(--focus-color);
+}
+#webcam-container canvas {
+  border: 5px solid var(--main-blue);
+  box-shadow: 6px 6px 0 var(--dark-blue);
+}
+#top-guess {
+  font-family: "Nunito", "Trebuchet MS", Arial, sans-serif;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: var(--dark-blue);
+}
+#label-container {
+  font-family: "IBM Plex Mono", monospace;
+}
