@@ -73,14 +73,32 @@
         <p>Our research question is: Can an image-based Teachable Machine be given three different hand moves (rock, paper, or scissors) to actively identify what move is thrown? </p>
       
     <h3><strong>Data Collected</strong></h3>
-      <p>We collected 300 total images, 100 per class (rock, paper, and scissors), per team member. Ben took 100 images of rock, Brooke took 100 images of scissors, and I (Avani) took 100 images of paper. We made sure to incorporate a level of variation in our training sets by taking pictures of our respective gestures in different angles and lighting conditions to ensure that our model wasn’t simply “memorizing” the answers based on a pre-designated position or background or amount of light in the image, for that matter. The technical term for this is overfitting, Having our training sets evenly split (100/100/100) ensured that our three gestures were being equally and fairly represented, although there are a few additional measures we could have taken to ensure greater representation and mitigate overfitting (see: Connecting to “Unmasking AI”).  </p>
+      <p>We collected 300 total images, 100 per class (rock, paper, and scissors), per team member. Ben took 100 images of rock, Brooke took 100 images of scissors, and I (Avani) took 100 images of paper. We made sure to incorporate a level of variation in our training sets by taking pictures of our respective gestures in different angles and lighting conditions to ensure that our model wasn’t simply “memorizing” the answers based on a pre-designated position or background or amount of light in the image, for that matter. The technical term for this is overfitting, Having our training sets evenly split (100/100/100) ensured that our three gestures were being equally and fairly represented, although there are a few additional measures we could have taken to ensure greater representation and mitigate overfitting (see: Connecting to “Unmasking AI”).
+      </p>
+      
       
     <h3><strong>How We Trained</strong></h3>
-      <p>To teach our Teachable Machine, we were using different angles and different lighting for each move. </p>
-      
+      <p>To teach our Teachable Machine, we were using different angles and different lighting for each move.
+      </p>
+      <div class="sample-photos">
+        <figure>
+          <img src="data/avani/avani_paper_1.jpg" alt="An open hand held sideways against a dark background, representing one of our images of paper.">
+          <figcaption>Paper (Avani)</figcaption>
+        </figure>
+        <figure>
+          <img src="data/ben/ben_rock_84.jpeg" alt="A closed fist resting on a wooden surface, representing one of our images of rock.">
+          <figcaption>Rock (Ben)</figcaption>
+        </figure>
+        <figure>
+          <img src="data/brooke/brooke_scissors_74.jpg" alt="Two fingers held up in a V in front of a wooden door with the palm facing forward, representing one of our images of scissors.">
+          <figcaption>Scissors (Brooke)</figcaption>
+        </figure>
+      </div>
     <h3><strong>Shortcomings</strong></h3>
-      <p>A few shortcomings we had found when adding the teachable machine to our site was how quickly the results changed due to having an open camera vs just snapping a photo. </p>
-      <p>Another shortcoming we had, not necessarily with the teachable machine itself, but a recommended change, was having an option to start and stop the camera from working instead of adding additional previews. </p>
+      <p>A few shortcomings we had found when adding the teachable machine to our site was how quickly the results changed due to having an open camera vs just snapping a photo.
+      </p>
+      <p>Another shortcoming we had, not necessarily with the teachable machine itself, but a recommended change, was having an option to start and stop the camera from working instead of adding additional previews.
+      </p>
     <h3><strong>Connection to "Unmasking AI"</strong></h3>
       <p>Unmasking AI, by Dr. Joy Buolamwini, showed us how an AI system works based on who made it and their values/biases. She explains that “AI reflects both the aspirations and the limitations of its makers. AI does not transcend humanity” (Buolamwini, 2023). Since we created our teachable machine, each of us took a move and took 100 pictures. This can cause the system to know only the examples we have given it. To create more diversity inside each move, we could have done an even split between the three of us within our 100/100/100 split so that there is different skin color, hand size, and hand shape for each move to make it more universal and representative of different demographics.</p> 
       <p>Although it seems like little nuances when trying to train a teachable machine, there is a lot more little factors that need to be thought about. Having examples for each move showing different skin color, child vs adult (hand size), male and female, amputated hands, etc. This would connect to increased intersectionality in our model. It would include individuals that may have multiple overlapping identities that are different than ours which it was trained on. Buolamwini explains how she applied intersectionality and defines it as, “analyzing across multiple axes of identity” (Buolamwini, 2023). So if we were to include images of individuals with different skin colors this does not necessarily mean that our model is equally representative of people with different ages, genders or physical abilities. For example, a child and an adult of a similar skin tone may still have different results using our machine due to the difference in their hand sizes. So just including one factor of demographics does not automatically assume intersectionality as intersectionality is the layered experiences, characteristics, and lifestyles each person holds independently.</p> 
