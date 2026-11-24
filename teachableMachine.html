@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="stylepage.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to main content</a>
+  <a class="skip-link" href="#main">Skip to main content</a> <!-- This adds a hidden skip link that lets users jump past the nav using the keyboard AJ-->
   <header>
     <nav>
       <a href="index.html">Home</a>
@@ -23,7 +23,7 @@
   </header>
   <main id="main">
     <h1>Project 3: Teachable Machine</h1>
-    <div class="ticker">
+    <div class="ticker"> <!-- This creates the scrolling banner text, otherwise known as a ticker, that hypes up our user for trying out our model AJ-->
       <p> Let's play rock paper scissors! ✊✋✌️ Let's play rock paper scissors! ✊✋✌️ Let's play rock paper scissors! ✊✋✌️ Let's play rock paper scissors! ✊✋✌️</p>
     </div>
     <section class="splash">
@@ -32,7 +32,7 @@
     </section>
     <section>
       <h2>Try the Model!</h2>
-      <button type="button" onclick="init()">Start</button>
+      <button type="button" onclick="init()">Start</button> <!-- This adds a button that starts the webcam and loads the model AJ-->
       <div id="webcam-container"></div>
       <div id="label-container"></div>
     </section>
