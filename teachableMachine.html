@@ -131,7 +131,7 @@
     }
     function stopCamera() {
         running = false;
-        webcam.stop();
+        if (webcam) webcam.stop();
         document.getElementById("webcam-container").innerHTML = "";
         document.getElementById("label-container").innerHTML = "";
         document.getElementById("top-guess").innerHTML = "";
